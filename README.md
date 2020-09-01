@@ -1,3 +1,57 @@
+### Git-page link
+https://vipuldeep.github.io/randomnamegenerator_api/
+
+## How To Use
+
+From your command line, first clone randomnamegenerator_api:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Vipuldeep/randomnamegenerator_api.git
+
+# Go into the repository
+$ cd randomnamegenerator_api
+
+# Remove current origin repository
+$ git remote remove origin
+```
+
+Then you can install the dependencies either using NPM or Yarn:
+
+Using NPM:
+```bash
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm start
+```
+Using Yarn:
+```bash
+# Install dependencies
+$ yarn
+
+# Start development server
+$ yarn start
+```
+
+**NOTE**:
+If your run into issues installing the dependencies with NPM, use this command:
+
+```bash
+# Install dependencies with all permissions
+$ sudo npm install --unsafe-perm=true --allow-root
+```
+
+```bash
+# if unable to install SASS
+$ npm install node-sass --save
+$ # or
+$ yarn add node-sass
+```
+
+Once your server has started, go to this url `http://localhost:8080/` and you will see the website running on a Development Server!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +120,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Acknowledgments
+
+I am thankful to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie) for encouraging me to learn react.js and applying my practices here!
