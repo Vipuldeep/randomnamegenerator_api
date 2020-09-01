@@ -22,19 +22,19 @@ export class App extends Component {
 
   render() {
     if (this.state.loading) {
-      return <div>Please be patient! loading data for you!</div>;
+      return <div className='ma5 tc f3'>Please be patient! loading data for you!</div>;
     }
 
     if (!this.state.person) {
-      return <div>Sorry, please try again, We didn't get a person!</div>;
+      return <div className='tc f4'>Sorry, please try again, We didn't get a person!</div>;
     }
 
     return (
-      <div>
-        <div class='tc'>{this.state.person.name.title}</div>
-        <div>{this.state.person.name.first}</div>
-        <div>{this.state.person.name.last}</div>
-        <img alt='profile' src={this.state.person.picture.large} />
+      <div className='ma6 tc'>
+        <div className='f1 ma5'>This is going to be your random name profile in Parallel universe!</div>
+        <div className='bg-white dib br3 pa3 ma2 grow bw2 shadow-5 br-4 name tj'>{this.state.person.name.title} {this.state.person.name.first} {this.state.person.name.last}</div><br/>
+        <img className='bg-white dib br3 pa3 ma2 shadow-5' alt='profile' src={this.state.person.picture.large} />
+        <div className='bg-black pa2 ma4 br-pill'><a href="https://github.com/Vipuldeep/Robofriends"><p className='tc link hover-gray'>@vipuldeep</p></a></div>
       </div>
     );
   }
