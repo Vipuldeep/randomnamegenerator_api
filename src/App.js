@@ -34,7 +34,7 @@ export class App extends Component {
         <div class='tc'>{this.state.person.name.title}</div>
         <div>{this.state.person.name.first}</div>
         <div>{this.state.person.name.last}</div>
-        <img alt='image' src={this.state.person.picture.large} />
+        <img alt='profile' src={this.state.person.picture.large} />
       </div>
     );
   }
