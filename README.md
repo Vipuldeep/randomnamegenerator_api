@@ -1,5 +1,5 @@
 ### Git-page link
-https://vipuldeep.github.io/randomnamegenerator_api/
+https://randomnamegeneratorapi.netlify.app/
 
 ## How To Use
 
