@@ -2,6 +2,7 @@ $font-size: 29px;
 
 .App {
   text-align: center;
+  background-color: #282c34 !important;
 }
 
 .App-logo {
@@ -16,7 +17,7 @@ $font-size: 29px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,6 +25,11 @@ $font-size: 29px;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
 }
 
 .App-link {
@@ -43,3 +49,49 @@ $font-size: 29px;
     transform: rotate(360deg);
   }
 }
+
+
+iv { 
+  margin: 10px; 
+} 
+
+.heading {
+  font-size: 26px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: pink 2px;
+}
+
+.section {
+  text-align: center;
+}
+
+.first { 
+  text-align: center;
+  width: 40%; 
+  display: inline-block; 
+  background-color: #d6897f; 
+} 
+
+.second { 
+  width: 40%; 
+  text-align: center;
+  display: inline-block; 
+  background-color: #aa586e; 
+} 
+
+.third { 
+  width: 33.33%; 
+  text-align: center;
+  display: inline-block; 
+  background-color: #80406f; 
+} 
+
+@media screen and (max-width: 500px) { 
+
+  .first, 
+  .second, 
+  .third { 
+      width: auto; 
+  } 
+} 

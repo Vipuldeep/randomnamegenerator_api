@@ -30,12 +30,21 @@ export class App extends Component {
     }
 
     return (
-      <div className='ma6 tc'>
-        <div className='f1 ma5'>This is going to be your random name profile in Parallel universe!</div>
-        <div className='bg-white dib br3 pa3 ma2 grow bw2 shadow-5 br-4 name tj'>{this.state.person.name.title} {this.state.person.name.first} {this.state.person.name.last}</div><br/>
-        <img className='bg-white dib br3 pa3 ma2 shadow-5' alt='profile' src={this.state.person.picture.large} />
-        <div className='bg-black pa2 ma4 br-pill'><a href="https://github.com/Vipuldeep/randomnamegenerator_api"><p className='tc link hover-gray'>@vipuldeep</p></a></div>
-      </div>
+      <div className="section">
+        <div className='mt5 tc heading'>Random Name generator</div>
+          <div className=' ma3 tc text'>Get new names every time you refresh!</div>
+          <div class="first br3 pa3 ma2"> 
+              <p>How about this name?</p> 
+          </div> 
+          <div class="second br3 pa3 ma2"> 
+              <p>{this.state.person.name.title} {this.state.person.name.first} {this.state.person.name.last}</p> 
+          </div> 
+          <div class="third br3 pa3 ma2"> 
+          <p> 
+          <img className='third bg-white br3 pa3' alt='profile' src={this.state.person.picture.large} />
+          </p> 
+          </div> 
+     </div>
     );
   }
 }
