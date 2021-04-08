@@ -43,7 +43,7 @@ export class App extends Component {
           <p> 
           <img className='third bg-white br3 pa3' alt='profile' src={this.state.person.picture.large} />
           </p> 
-          </div> 
+      </div> 
      </div>
     );
   }
